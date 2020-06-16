@@ -35,7 +35,7 @@ img{
     margin-left: 36px;
 }
 .main-nav a{
-    color: #443322;
+    color: #fff;
     position: relative;
 }
 .main-nav a:after{
@@ -81,6 +81,7 @@ img{
     font-size: 1.125rem;
     margin: 10px 0 42px;
     font-family: 'Philosopher', serif;
+    color: #fff;
 }
 /*HOMEコンテンツ指定(ページリンクボタンなど)ここまで*/
 
@@ -165,7 +166,7 @@ img{
     transform: translate(-50%, -50%);
 }
 .typed_wrap h1{
-    color: #432;
+    color: #fff;
     font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
 }
@@ -237,7 +238,7 @@ img{
     background-repeat: no-repeat;
 }
 #home{
-    background-image: url(images/back18.jpg);
+    background-image: url(images/back19.jpg);
     min-height: 100vh;
     background-color:rgba(255,255,255,0.2);
     background-blend-mode:lighten;
