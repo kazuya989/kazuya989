@@ -77,7 +77,7 @@ img{
 /*HOMEコンテンツ指定(ページリンクボタンなど)*/
 .home-content{
     text-align: center;
-    margin-top: 20%;
+    margin-top: 7%;
 }
 .home-content p{
     font-size: 1.125rem;
