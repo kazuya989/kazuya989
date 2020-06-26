@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ja">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>graphic</title>
+        <link rel="stylesheet" href="css/parallax.css">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+    </head>
+<body>
+
+    <!--<div class="background"></div>-->
+
+    <div class="section">
+        <div class="section-img">
+            <div class="section-img-inner" style="background-image: url(images/page-cover-haircut.png);"></div>
+        </div>
+        <div class="section-body">
+            <div class="section-text">
+                <h2>BEAUTY SALON</h2>
+                <p>
+                    架空のヘアサロンのバナー広告を作成しました。ロゴを通してヘアサロンであること、女性専用であることを伝えるため、ハサミを使用しカラーは赤を基調としています。
+                </p>
+                <p>
+                    制作年/2020年<br>制作期間/2時間<br>使用ツール/Photoshop/Illustrator
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-img">
+            <div class="section-img-inner" style="background-image: url(images/page-cover-eye.png);"></div>
+        </div>
+        <div class="section-body">
+            <div class="section-text">
+                <h2>EYE DROPS</h2>
+                <p>
+                    架空の目薬ブランドのバナーデザインです。印象に残りやすい名称、キャッチコピーの考案nに時間をかけました。
+                    パステルカラーを使用し、目につきやすく、デスクワークを行う女性の方にも興味を持っていただけるよう意識し製作しています。
+                </p>
+                <p>
+                    制作年/2020年<br>制作期間/2時間<br>使用ツール/Photoshop/Illustrator
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-img">
+            <div class="section-img-inner" style="background-image: url(images/page-cover-perfume.png);"></div>
+        </div>
+        <div class="section-body">
+            <div class="section-text">
+                <h2>PERFUME BANNER</h2>
+                <p>
+                    香水ブランドのバナー広告を作成しました。エレガントなイメージを表現したく、モノクロ調でうっすらグラデーションをかけて香水の香りを表現しています。
+                </p>
+                <p>
+                    制作年/2019年<br>制作期間/1時間30分<br>使用ツール/Photoshop/Illustrator
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-img">
+            <div class="section-img-inner" style="background-image: url(images/page-cover-psycho.png);"></div>
+        </div>
+        <div class="section-body">
+            <div class="section-text">
+                <h2>FASHION BRAND</h2>
+                <p>
+                    メンズファッション専門店をイメージして作成した架空バナーです。
+                    モノクロ・ブラー効果を使用し落ち着かせています。
+                    ブランド名は精神面をファッションを前面に出してくことを目指す意味合いを込めて決定しました。
+                </p>
+                <p>
+                    制作年/2020年<br>制作期間/1時間30分<br>使用ツール/Photoshop/Procreate
+                </p>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+
+<script>
+
+$(window).scroll(function(){
+    var $window = $(window),
+        $body = $('body'),
+        $panel = $('.section');
+
+    var scroll = $window.scrollTop() + ($window.height() / 3);
+
+    $panel.each(function(){
+        var $this = $(this);
+        if ($this.position().top <= scroll && $this.position() .top +
+        $this.height() > scroll){
+            $body.removeClass(function (index, css){
+                return (css.match (/(^|\s)color-\s+/g) || [].join(' '));
+            });
+
+            $('.section').removeClass('active');
+            $this.addClass('active');
+        }
+    });
+}).scroll();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
