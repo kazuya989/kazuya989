@@ -1,71 +1,168 @@
 <!doctype html>
-<html lang="ja">
-     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>kazudesign.com</title>
-        <meta name="descripsion" content="必要なもの"を考え、効果的なコンテンツ・デザインをお客様と共に作り上げます。>
-        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/png" href="images/favicon.png">
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link href="css/style.css" rel="stylesheet">
+<title>Portfolio-Kazuya989</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/14.2.1/smooth-scroll.min.js"></script>
+<link rel="icon" type="image/png" href="images/favicon.png">
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-        <script>
-            $(function() {
-                $(".typed").typed({
-                    strings: ["I'm Kazuya Hashimoto.", "welcome to My portfolio."],
-                    typeSpeed: 50,
-                    startDelay: 1000,
-                    backSpeed: 20,
-                    loop: true,
-                    loopCount: 3,
-                    showCursor: false,
-                    backDelay: 500,
-                });
-            });
-        </script>
 
-    </head>
+<script>
+var scroll = new SmoothScroll('a[href*="#"], [data-scroll]',{
+    offset: 50
+  });
+</script>
 
-    <body>
-        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+<script>
+    $(function() {
+        $(".typed").typed({
+            strings: ["I'm Kazuya Hashimoto.", "welcome to My portfolio."],
+            typeSpeed: 50,
+            startDelay: 1000,
+            backSpeed: 20,
+            loop: true,
+            loopCount: 3,
+            showCursor: false,
+            backDelay: 500,
+        });
+    });
+</script>
 
-      <div id="home" class="big-bg">
-        <header class="page-header wrapper">
-            <h1><a href="index.html"><img class="logo" src="images/logo2.svg" alt="kazudesignホーム"></a></h1>
-            <nav>
-                <ul class="main-nav">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="graphic.html">Graphic</a></li>
-                    <li><a href="web.html">Web</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-       <div class="home-content wrapper">
-           <!--タイピング--> 
-           <div class="typing">
-            <div class="typed_wrap">
-              <h1><span class="typed"></span></h1>
-            </div>
-          </div>
-           <p>デザインで日々を豊かにするために。常に疑問を持ちながら。</p>
-           
-           
-           <!--<a class="button" href="graphic.html"><span>See more.</span></a>-->
-       </div><!--home-content-->
+
+</head>
+
+<body>
+    
+<header> 
+<div id="nav-drawer">
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      <div id="nav-content">
+         <ul>
+           <li><a href="index.html">top</a></li>
+           <li><a href="#main">design</a></li>
+           <li><a href="#about">profile</a></li>
+           <li><a href="#contact-form">contact</a></li>
+           <li><a href="https://ameblo.jp/kazuya090809/">blog</a></li>
+         </ul>
+       </div>
+  </div>
+</header>
+
+
+
+
+
+
+<div class="header">
+<!--<div class="header-logo">portfolio</div>-->
+
+</div>
+
+<!--<div class="sample sample-one"><img src="images/psycho.JPG"></div>
+<div class="sample sample-second"><img src="images/eye.PNG"></div>
+<div class="sample sample-third"><img src="images/pink%20light.jpg"></div>--> 
+<div class="head-animation">
+    
+
+
+    
+   <!--
+   <div id="main_visual">
+       <div class="animation-text">
+            <h1>
+                 <span>always be</span>
+                 <div class="message">
+                      <div class="word1">close</div>
+                      <div class="word2">code</div>
+                      <div class="word3">creating</div>
+    
+                 </div>
+            </h1>
+    
         </div>
-      </div><!--#home-->
-      <div class="graphic-area">
+     <img src="images/roman-bozhko-PypjzKTUqlo-unsplash.jpg">
+   </div> 
+</div>    
+--> 
+
+<div class="typing">
+    <div class="typed_wrap">
+      <h1><span class="typed"></span></h1>
+    </div>
+  </div>
+
+
+<div id="main">
+   <div class="setsumei"><h2>Graphic Design</h2>
+	<p>主にPhotoshopを活用し、画像制作を行っています。</p>
+   </div>
+	<div id="mydesign">
+		<ul>
+            <li><a href="images/psycho.JPG"><img src="images/psycho.JPG"></a></li>
+			<li><a href="images/pink light2.jpg"><img src="images/pink light2.jpg"></a></li>
+			<li><a href="images/eye.PNG"><img src="images/eye.PNG"></a></li>
+			<li><a href="images/perfume.jpg"><img src="images/perfume.jpg"></a></li>
+			<li><a href="images/customcar.PNG"><img src="images/customcar.PNG"></a></li>
+			<li><a href="images/jump.JPG"><img src="images/jump.JPG"></a></li>
+			<li><a href="images/fictionmovieimage.JPG"><img src="images/fictionmovieimage.JPG"></a></li>
+			<li><a href="images/psycho.JPG"><img src="images/psycho.JPG"></a></li>
+			<li><a href="images/psycho.JPG"><img src="images/psycho.JPG"></a></li>
+			<li><a href="images/psycho.JPG"><img src="images/psycho.JPG"></a></li>
+
+		</ul>
+	</div>
+</div>
+ 
+<!--<div id="profile">
+	<h1>kazuya 989...</h1>
+	<p>profile</p>
+	<p>福井県出身です。専門学校でWeb・グラフィックデザインを学び、地元のECサイト運営会社へ就職しました。<br>主にPhotoshopでの商品画像作成・登録業務を担当。自身のスキルアップのため9月をもって退社。上京しました。
+	音楽鑑賞が趣味で、ライブにもよく足を運んだりしています。</p>
+	
+	
+</div>-->
+
+
+<!--<a href="design.html"><p class="fade-in">View-All</p></a>-->
+
+
+
+<div id="button-zone">
+    <a href="design.html"><button class="btn-1">View-All</button></a>
+</div>
+
+<div class="graphic-area">
+    <div class="vcontainer">
+      <img src="images/graphic-design1.jpg" width="600px" height="auto">
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+      <div class="content">
+            <h2>graphic design</h2>
+            <p>紙・画像関連の作品を紹介しています。<br>skills/Ps/Ai/Procreate</p>
+      </div>
+      
+    </div>
+    <div class="basicBox">
+      <a href="graphic_2.html">See more.
+      <svg width="130" height="65" viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">
+        <rect x='0' y='0' fill='none' width='130' height='65'/>
+      </svg>
+      </a>
+  </div>
+  <div class="graphic-area">
       <div class="vcontainer">
-        <img src="images/graphic-design1.jpg" width="600px" height="auto">
+        <img src="images/typing.jpg" width="600px" height="auto">
         <div class="box-1"></div>
         <div class="box-2"></div>
         <div class="content">
-              <h2>graphic design</h2>
-              <p>紙・画像関連の作品を紹介しています。<br>skills/Ps/Ai/Procreate</p>
+              <h2>web design</h2>
+              <p>Web関連の作品を紹介しています。<br>skills/vscode/Dreamwever</p>
         </div>
         
       </div>
@@ -75,30 +172,67 @@
           <rect x='0' y='0' fill='none' width='130' height='65'/>
         </svg>
         </a>
-    </div>
-    <div class="graphic-area">
-        <div class="vcontainer">
-          <img src="images/typing.jpg" width="600px" height="auto">
-          <div class="box-1"></div>
-          <div class="box-2"></div>
-          <div class="content">
-                <h2>web design</h2>
-                <p>Web関連の作品を紹介しています。<br>skills/vscode/Dreamwever</p>
-          </div>
+      </div>
+  </div>
+
+
+  <div id="about">
+    <h2>About</h2>
+</div>    
+<div class="p-about">
+    
+<div class="p-about__content">
+    <h3 lang="em" class="p-contentbox__title">profile</h3>
+    <p>Hashimoto Kazuya</p>
+    <p>福井県生まれ、東京都在住。19年9月に退職し、デザイン・コーディングを両立したWebデザイナーを目指し日々成長中です。</p>
+</div>
+<div class="p-contentsbox-skills">
+    <h3 lang="em" class="p-contentbox__title">skills</h3>
+    <p>Web制作を学習中。毎日エディターと睨めっこしています。画像編集などは学生時代から趣味で続けていて、スマートフォンの壁紙を作ったり、ケースのデザイン・Tシャツのデザインも行っています。</p>
+    
+    
+</div>       
+
+</div>    
+
+
+
+
+<div id="contact-form">
+    <h2>Contact</h2>
+    <p>お名前</p>
+    <input>
+
+    <p>メールアドレス(必須)</p>
+    </h2>
+    <input>
+
+   <p>お問い合わせ内容(必須)</p>
+   <textarea></textarea>
+
+   <div class="botton">
+       <input class="contact-submit" type="submit" value="送信"> 
+   </div>
+</div>
+
+
+<footer>
+    <div class="footer-menu">
+        <ul>
+            <li><a href="index.html">top</a></li>
+            <li><a href="#main">design</a></li>
+            <li><a href="#about">profile</a></li>
+            <li><a href="#contact-form">contact</a></li>
+            <li><a href="https://ameblo.jp/kazuya090809/">blog</a></li>
+            
+            
+            
+        </ul>
           
-        </div>
-        <div class="basicBox">
-          <a href="graphic.html">See more.
-          <svg width="130" height="65" viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">
-            <rect x='0' y='0' fill='none' width='130' height='65'/>
-          </svg>
-          </a>
-        </div>
-    </div>
+      </div>
+
+
+    <p>© All rights reserved by kazuya989.</p>
+</footer>
 </body>
-     <footer>
-        <div class="wrapper">
-            <p><small>&copy; 2020 kazudesign</small></p>
-        </div>
-    </footer>
 </html>
